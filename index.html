@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ScalaでServerless Architectureをライブコーディングするっす</title>
+
+    <link rel="stylesheet" href="./css/reveal.css">
+    <link rel="stylesheet" href="./css/theme/night.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="./lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="./img/scala_kb.png" style="height:60px;position:absolute;top:0;left:0;transform:rotate(-10deg);">
+          <img src="./img/lambda.png" style="height: 75px;background-color:#FFF;position:absolute;top:0px;right:80px;transform:rotate(15deg);">
+          <img src="./img/apigateway.svg" style="height: 75px;background-color:#FFF;position:absolute;top:0;right:0;transform:rotate(15deg);">
+          <h1 style="font-size:3.5em;">Scalaで<br>Serverless Architectureを<br>ライブコーディング</h1>
+          <p>
+            <small>
+              2017-04-27(Thu) / <a href="https://twitter.com/yoshiyoshifujii">@yoshiyoshifujii</a>
+            </small>
+          </p>
+        </section>
+
+        <section data-markdown data-separator="^\n---$" data-vertical="^\n>>>$">
+          <script type="text/template">
+## こんにちは
+
+* Yoshitaka Fujii [@yoshiyoshifujii](https://twitter.com/yoshiyoshifujii)
+* Software Engineer
+* Scala / Java / Python / Typescript
+* Scala 関西 Summit Staff
+
+![my](./img/fujii.png)
+![motex](./img/motex.png)
+
+---
+
+![summit](./img/summit.png)
+
+---
+
+# 最近の活動
+
+---
+
+![Serverless](./img/serverless.png)
+https://www.slideshare.net/yoshiyoshifujii/serverless-apps-on-aws-using-scala-66560903
+
+---
+
+![Serverless](./img/qiita.png)
+http://qiita.com/yoshiyoshifujii/items/f7bb8abd56fe9ea33e2d
+
+---
+
+![Serverless](./img/github.png)
+https://github.com/yoshiyoshifujii/sbt-aws-serverless
+
+---
+
+![tweet](./img/tweet.png)
+https://twitter.com/yoshiyoshifujii/status/857063499050045440
+
+---
+
+![matsuri](./img/11.png)
+http://2017.scalamatsuri.org/#schedule
+
+---
+
+![slide](./img/slide.png)
+https://speakerdeck.com/yoshiyoshifujii/scala-matsuri-2017
+
+
+          </script>
+        </section>
+
+        <section data-background-image="./img/diagrams.png">　</section>
+
+        <section data-background-image="./img/giter8.png">　</section>
+
+        <section data-markdown data-separator="^\n---$" data-vertical="^\n>>>$">
+          <script type="text/template">
+# ライブ<br>コーディング
+
+          </script>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: './plugin/markdown/marked.js' },
+          { src: './plugin/markdown/markdown.js' },
+          { src: './plugin/notes/notes.js', async: true },
+          { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ],
+        slideNumber: 'c/t'
+      });
+    </script>
+  </body>
+</html>
